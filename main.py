@@ -36,8 +36,10 @@ def main_menu():
             np.savetxt(save_path, message, fmt='%d')
             print("隐写信息已提取.")
         elif choice == '3':
-            image_path = input("请输入图像路径: ")
-            analyze.plot_dct_histogram(image_path)
+            # image_path = input("请输入图像路径: ")
+            image_path0 = "input/lena.jpg"
+            image_path1 = "output/stego.jpg"
+            analyze.plot_dct_histogram(image_path0)
         elif choice == '4':
             break
         else:
